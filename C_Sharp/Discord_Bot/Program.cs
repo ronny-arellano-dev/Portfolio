@@ -27,7 +27,7 @@ namespace Chesty_Bot
                 .BuildServiceProvider();
             // invite link for bot https://discordapp.com/oauth2/authorize?client_id=412731490745450496&scope=bot
 
-            string botToken = "TOKEN";
+            string botToken = "TOKEN GOES HERE";
 
             //event subscriptions
             _client.Log += Log;

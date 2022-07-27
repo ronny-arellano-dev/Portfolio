@@ -1,8 +1,8 @@
 ﻿# Enter read path
-$users = Import-Csv "C:\Users\ronny.admin\Desktop\MFA_Disabled_Users.csv"
+$users = Import-Csv "C:\Users\USERNAME\Desktop\MFA_Disabled_Users.csv"
 
 # Enter save path
-$csvfile = "C:\Users\ronny.admin\Desktop\users_test_8.csv"
+$csvfile = "C:\Users\USERNAME\Desktop\users_test_8.csv"
 
 # Cycle through users in CSV
 foreach($user in $users){
@@ -13,7 +13,7 @@ foreach($user in $users){
     #Write-Host $dName[0]
     $domain = $dName[1].ToLower()
     
-    if($dName[1] -eq "leagold-ops.com"){
+    if($dName[1] -eq "DOMAIN One"){
         New-Object -TypeName PSCustomObject -Property @{
             DisplayName = $userUPN
             Title = "Not in EQX"
@@ -22,7 +22,7 @@ foreach($user in $users){
             Enabled = ""
         } | Export-Csv -Path $csvfile -NoTypeInformation -Append       
     }
-    elseif($dName[1] -eq "aurizona.com"){
+    elseif($dName[1] -eq "DOMAIN Two"){
         New-Object -TypeName PSCustomObject -Property @{
             DisplayName = $userUPN
             Title = "Not in EQX"

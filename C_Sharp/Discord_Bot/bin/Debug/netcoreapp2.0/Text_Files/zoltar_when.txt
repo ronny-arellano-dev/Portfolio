@@ -1,0 +1,30 @@
+﻿Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Tomorrow
+Today
+Yesterday
+Yesteryear
+NEVER!
+Maybe someday
+I don't know
+When the time is right
+In January
+In February
+In March
+In April
+In May
+In June
+In July
+In August
+In September
+In October
+In November
+In December
+When pigs fly
+When you can do a triple backflip onto a miniature horse
+EOF

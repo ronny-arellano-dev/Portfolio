@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Wooden_chest.png" />
+    <None Remove="Text_Files\zoltar_general.txt" />
+    <None Remove="Text_Files\zoltar_how.txt" />
+    <None Remove="Text_Files\zoltar_what.txt" />
+    <None Remove="Text_Files\zoltar_when.txt" />
+    <None Remove="Text_Files\zoltar_where.txt" />
+    <None Remove="Text_Files\zoltar_why.txt" />
+    <None Remove="Text_Files\zoltar_will.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Text_Files\zoltar_general.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Text_Files\zoltar_how.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Text_Files\zoltar_what.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Text_Files\zoltar_when.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Text_Files\zoltar_where.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Text_Files\zoltar_will.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Text_Files\zoltar_why.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Wooden_chest.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="1.0.2" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.108" />
+  </ItemGroup>
+
+</Project>

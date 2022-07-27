@@ -71,7 +71,7 @@ async def view_events(ctx,eventType: str=None):
     eventList = ['list','this']
     print(eventType)
     if eventType is None:
-        events = 'You fucked up, bud.'        
+        events = 'What about the events?'        
     else:
         events = eventList
     

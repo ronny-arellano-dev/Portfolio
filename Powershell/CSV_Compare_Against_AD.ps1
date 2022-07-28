@@ -16,23 +16,23 @@ foreach($user in $users){
     if($dName[1] -eq "DOMAIN One"){
         New-Object -TypeName PSCustomObject -Property @{
             DisplayName = $userUPN
-            Title = "Not in EQX"
-            EmailAddress = "Not in EQX"
-            CanonicalName = "Not in EQX"
+            Title = "Not in XXX"
+            EmailAddress = "Not in XXX"
+            CanonicalName = "Not in XXX"
             Enabled = ""
         } | Export-Csv -Path $csvfile -NoTypeInformation -Append       
     }
     elseif($dName[1] -eq "DOMAIN Two"){
         New-Object -TypeName PSCustomObject -Property @{
             DisplayName = $userUPN
-            Title = "Not in EQX"
-            EmailAddress = "Not in EQX"
-            CanonicalName = "Not in EQX"
+            Title = "Not in XXX"
+            EmailAddress = "Not in XXX"
+            CanonicalName = "Not in XXX"
             Enabled = ""
         } | Export-Csv -Path $csvfile -NoTypeInformation -Append 
     }
     else {
-        Write-Host $dName[0] is an Equinox account.
+        Write-Host $dName[0] is an XXX account.
         $getinfo = Get-ADUser -Filter {UserPrincipalName -eq $userUPN} -Properties * | select DisplayName,Title,EmailAddress,CanonicalName,Enabled
         $getinfo | Export-Csv -Path $csvfile -Append
     }

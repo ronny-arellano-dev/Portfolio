@@ -20,3 +20,10 @@ My name is Ronny Arellano and during my entire career in technology in both the 
 - Python
 - Powershell
 - MS KQL
+
+## Current Project
+
+### Discord Bot - Python
+
+The goal is to build a bot that provides specific functions that facilitate event management for
+Widow Clan Esports. The bot will be able to maintain a leaderboard using MySQL, will follow a custom Ranking algorithm, and create custom matches based on leaderboard. Currently, the matchmaking process has been built and I am working on the leaderboard module.

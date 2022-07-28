@@ -20,4 +20,4 @@ foreach($file in $files){
     #Write-Host $extension[-1]
 }
 $txtFile = -join($machineName.CsName,"_ext_list_",$date.ToString(),".txt")
-$extList | Out-File C:\Users\rarellano_pa\Documents\$txtFile
+$extList | Out-File C:\Users\USERACCOUNT\Documents\$txtFile

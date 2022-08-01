@@ -12,9 +12,6 @@ public class diceRoller {
 
         intTotal = 0;
 
-        // DEBUG
-        //System.out.println("\t===== STARTING ROLLS =====");
-
         // Create separate random rolls and keep track
         for(int x = 0; x < intNumDice; x++){
 
@@ -27,22 +24,13 @@ public class diceRoller {
 
             // Add dieRoll to numRolls based on last count
             allRolls[numRolls] = dieRoll;
-
-            // DEBUG
-            //System.out.println("\tRoll " + (numRolls + 1) + " is " + dieRoll + ".");
         }
 
         // Get Total
         int rollCount = allRolls.length;
         for(int y=0;y<rollCount;y++){
             intTotal = intTotal + allRolls[y];
-
-            // DEBUG
-            //System.out.println("\tYour total so far is " + intTotal);
         }
-
-        // DEBUG
-        //System.out.println("\tRolled " + rollCount + " times.");
 
         // Return Roll Total
         return intTotal;

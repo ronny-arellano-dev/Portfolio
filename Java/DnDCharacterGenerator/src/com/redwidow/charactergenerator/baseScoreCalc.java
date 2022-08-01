@@ -20,25 +20,12 @@ public class baseScoreCalc {
         for(int x=0;x<4;x++) {
             int abScoreRoll = abScore.getRoll();
             rollResults[x] = abScoreRoll;
-
-            // DEBUG
-            //System.out.println("Ability Roll " + (x + 1) + " came out to " + abScoreRoll);
         }
 
-        // DEBUG
-        //System.out.println("===== ABILITY SCORE ROLLS =====");
-
         // Sort Results
-        Arrays.sort(rollResults);        
-
-        // DEBUG
-        //String strRollResults = Arrays.toString(rollResults);
-        //System.out.println("Results are sorted as follows: " + strRollResults);
+        Arrays.sort(rollResults);
 
         baseScore = rollResults[1] + rollResults[2] + rollResults[3];
-
-        // DEBUG
-        //System.out.println("Returning baseScore of " + baseScore);
 
         // Return base Score
         return baseScore;

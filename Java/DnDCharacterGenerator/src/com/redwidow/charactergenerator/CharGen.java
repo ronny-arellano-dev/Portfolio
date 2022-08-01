@@ -54,10 +54,6 @@ public class CharGen {
 
         Arrays.sort(sortedBaseScore);
 
-        // DEBUG
-        System.out.println("Passed stats are " + Arrays.toString(bestScoreSet));
-        System.out.println("base stats are sorted like this " + Arrays.toString(sortedBaseScore));
-
         for(int x=0;x<6;x++) {
             // Get preset
             int prefStat = bestScoreSet[x];

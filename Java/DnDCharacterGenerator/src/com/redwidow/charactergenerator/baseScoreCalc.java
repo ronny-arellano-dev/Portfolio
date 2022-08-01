@@ -161,9 +161,6 @@ public class baseScoreCalc {
                 break;
         }
 
-        // DEBUG
-        System.out.println("Selected stats are " + Arrays.toString(prefStatSetup));
-
         return prefStatSetup; 
     }
 }

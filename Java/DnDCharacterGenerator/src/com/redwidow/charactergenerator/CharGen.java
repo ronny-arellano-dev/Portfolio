@@ -6,6 +6,7 @@ public class CharGen {
     public static void main(String[] args) {
         // Global Variables
         String selRace, selClass;
+        String[] baseStat = {"STR","DEX","CON","INT","WIS","CHA"};
         int intLevel, intAge; // Bio
         int baseStr, baseDex, baseCon, baseInt, baseWis, baseCha; // Base Ability Scores
         int modStr, modDex, modCon, modInt, modWis, modCha; // Ability Score Modifier
@@ -86,25 +87,14 @@ public class CharGen {
 
         // Output
         System.out.println("===== YOUR NEW CHARACTER =====");
-        System.out.println("Your starting level is " + intLevel);
-        System.out.println("Your starting age is " + intAge);
-        System.out.println("Your selected race is " + selRace);
-        System.out.println("Your selected class is " + selClass);
-        System.out.println("Your base stats are as follows:");
-        System.out.println("\tSTR - " + baseStr);
-        System.out.println("\tDEX - " + baseDex);
-        System.out.println("\tCON - " + baseCon);
-        System.out.println("\tINT - " + baseInt);
-        System.out.println("\tWIS - " + baseWis);
-        System.out.println("\tCHA - " + baseCha);
-        System.out.println("Your Modifier stats are as follows:");
-        System.out.println("\tSTR - " + modStr);
-        System.out.println("\tDEX - " + modDex);
-        System.out.println("\tCON - " + modCon);
-        System.out.println("\tINT - " + modInt);
-        System.out.println("\tWIS - " + modWis);
-        System.out.println("\tCHA - " + modCha);
+        System.out.println("Character Name: ");
+        System.out.println("Class: " + selClass + "\tLevel: " + intLevel);
+        System.out.println("Race: " + selRace + "\tAge: " + intAge);
+        System.out.println("--Base Stats-- \t|| Mod");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~");
+        // Display Base Stats
+        for(int x=0;x<6;x++) {
+            System.out.println(baseStat[x] + " - " + allStats[x] + "  \t||  " + allModifiers[x]);
+        }
     }
-
-
 }

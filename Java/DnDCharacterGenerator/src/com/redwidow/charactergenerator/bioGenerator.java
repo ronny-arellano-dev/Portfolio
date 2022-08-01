@@ -21,7 +21,7 @@ public class bioGenerator {
         return pickedRace;
     }
 
-    // Get Race Benefits
+    // Get Race Score Benefits
     static int[] getRaceBenefits() {
         int[] raceStatBenefits = new int[6]; // 0 STR, 1 DEX, 2 CON, 3 INT, 4 WIS, 5 CHA
         Arrays.fill(raceStatBenefits, 0); //  0 Dwarf, 1 Elf, 2 Halfing, 3 Human, 4 Dragonborn, 5 Gnome, 6 Half-Elf, 7 Half-Orc, 8 Tiefling

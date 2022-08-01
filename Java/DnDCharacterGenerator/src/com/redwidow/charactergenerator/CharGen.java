@@ -15,6 +15,9 @@ public class CharGen {
         // Select Level
         intLevel = 1;
 
+        // Enter Age
+        intAge = 45;
+
         // Select Race
         bioGenerator newRace = new bioGenerator();
         selRace = newRace.getNewRace();
@@ -84,6 +87,7 @@ public class CharGen {
         // Output
         System.out.println("===== YOUR NEW CHARACTER =====");
         System.out.println("Your starting level is " + intLevel);
+        System.out.println("Your starting age is " + intAge);
         System.out.println("Your selected race is " + selRace);
         System.out.println("Your selected class is " + selClass);
         System.out.println("Your base stats are as follows:");

@@ -1,7 +1,5 @@
 package com.redwidow.charactergenerator;
 
-import java.util.Random;
-
 public class CharGen {
     public static void main(String[] args) {
         // Global Variables
@@ -11,9 +9,8 @@ public class CharGen {
         int baseStr, baseDex, baseCon, baseInt, baseWis, baseCha; // Base Ability Scores
         int modStr, modDex, modCon, modInt, modWis, modCha; // Ability Score Modifier
         int lstLength, selNum; // List manipulation
-        Random rndNum = new Random(); // For all random numbers?
 
-        // Select Level
+        // Set Level
         intLevel = 1;
 
         // Enter Age

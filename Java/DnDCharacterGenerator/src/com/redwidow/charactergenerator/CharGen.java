@@ -1,5 +1,9 @@
 package com.redwidow.charactergenerator;
 
+import java.util.Arrays;
+
+import com.redwidow.charactergenerator.charSheet.savingThrows;
+
 public class CharGen {
     public static void main(String[] args) {
         // Global Variables
@@ -19,10 +23,12 @@ public class CharGen {
         // Select Race
         bioGenerator newRace = new bioGenerator();
         selRace = newRace.getNewRace();
+        int selRaceIndex = newRace.getRaceIndex();
 
         // Select Class
         bioGenerator newClass = new bioGenerator();
         selClass = newClass.getNewClass();
+        int selClassIndex = newClass.getClassIndex();
 
         // ===== BASE SCORES =====
         // Obtain Base Ability Scores and create pre-set array
@@ -40,6 +46,25 @@ public class CharGen {
         for (int z=0;z<baseBenefits.length;z++) {
             allStats[z] = allStats[z] + baseBenefits[z];
         }
+
+        // Set scores based on Class Recommendations
+        int[] bestScoreSet = newBaseStats.sortScore(selClassIndex);
+        int[] sortedBaseScore = allStats;
+        int[] sortedStats = new int[6];
+
+        Arrays.sort(sortedBaseScore);
+
+        // DEBUG
+        System.out.println("Passed stats are " + Arrays.toString(bestScoreSet));
+        System.out.println("base stats are sorted like this " + Arrays.toString(sortedBaseScore));
+
+        for(int x=0;x<6;x++) {
+            // Get preset
+            int prefStat = bestScoreSet[x];
+
+            // Grab to index 0 of sorted base scores and set it to correct index in allStats
+            sortedStats[prefStat] = sortedBaseScore[x];
+        }
         
         // ===== SCORE MODIFIERS =====
         // Obtain Base Ability Modifiers
@@ -53,6 +78,10 @@ public class CharGen {
         }
 
         // ===== SAVING THROWS =====
+        // Create new Object
+        charSheet savingThrows = new charSheet();
+
+        // Calculate saving throws
 
 
         // ===== OUTPUT =====
@@ -64,7 +93,7 @@ public class CharGen {
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~");
         // Display Base Stats
         for(int x=0;x<6;x++) {
-            System.out.println(baseStat[x] + " - " + allStats[x] + "  \t||  " + allModifiers[x]);
+            System.out.println(baseStat[x] + " - " + sortedStats[x] + "  \t||  " + allModifiers[x]);
         }
     }
 }

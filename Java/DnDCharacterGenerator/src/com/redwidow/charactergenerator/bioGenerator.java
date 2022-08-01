@@ -10,6 +10,12 @@ public class bioGenerator {
 
     // Global Variables
     static int raceIndex;
+    static int classIndex;
+
+    // Get Race Index
+    static int getRaceIndex() {
+        return raceIndex;
+    }
 
     // Get Race
     static String getNewRace(){
@@ -66,11 +72,16 @@ public class bioGenerator {
         return raceStatBenefits;
     }
 
+    // Get Class Index
+    static int getClassIndex() {
+        return classIndex;
+    }
+
     // Get Class
     static String getNewClass(){
         Random rollClass = new Random();
         int classRoll = rollClass.nextInt(lstClass.length);
-
+        classIndex = classRoll;
         String pickedClass = lstClass[classRoll];
 
         return pickedClass;

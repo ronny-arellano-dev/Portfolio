@@ -4,6 +4,8 @@ public class charSheet {
     // Saving Throws
     public class savingThrows {
         int stSTR,stDEX,stCON,stINT,stWIS,stCHA;
+
+        // Calculate based on Class Proficiency
     }
 
     // Skills

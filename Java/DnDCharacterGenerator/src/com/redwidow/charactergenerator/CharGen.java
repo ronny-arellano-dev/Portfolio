@@ -2,8 +2,6 @@ package com.redwidow.charactergenerator;
 
 import java.util.Arrays;
 
-import com.redwidow.charactergenerator.charSheet.savingThrows;
-
 public class CharGen {
     public static void main(String[] args) {
         // Global Variables

@@ -71,10 +71,6 @@ public class CharGen {
             allModifiers[y] = modResult;
         }
 
-        // ===== SAVING THROWS =====
-
-        // Calculate saving throws
-
         // ===== SKILLS =====
 
         // ==== HP & ARMOR CLASS =====

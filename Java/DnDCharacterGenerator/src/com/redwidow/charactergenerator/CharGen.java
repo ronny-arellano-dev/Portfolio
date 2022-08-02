@@ -74,11 +74,13 @@ public class CharGen {
         }
 
         // ===== SAVING THROWS =====
-        // Create new Object
-        charSheet savingThrows = new charSheet();
 
         // Calculate saving throws
 
+        // ===== SKILLS =====
+
+        // ==== HP & ARMOR CLASS =====
+        
 
         // ===== OUTPUT =====
         System.out.println("===== YOUR NEW CHARACTER =====");

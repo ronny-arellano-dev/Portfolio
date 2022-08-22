@@ -50,7 +50,7 @@ Attribute VB_Name = "Module1"
 Public Sub saveBlastCSVtoDisk(itm As Outlook.MailItem)
     
     ' Set the Parent Folder
-    saveFolder = "\\app02-ipl\acQuire\Test data"
+    saveFolder = "\\SERVER\SOFTWARE\Test data"
     
     ' Sort through attachments
     For Each objAtt In itm.Attachments
